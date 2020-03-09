@@ -18,20 +18,19 @@ export default function App(props) {
 
   return (
     <div className="App">
-      { state.isLoading ? (<div className="spinner"/>) : (
-
-        <div>
-          {state.smurfs.map(item => 
-            <Smurf smurf={item} key={item.id}/>  
-          )}
-        </div>)}
 
 
         {/* form  */}
-            <Form/>
+        <Form/>
+        {/* form  */}
 
+      { state.isLoading ? (<div className="spinner"/>) : (
 
-
+        <>
+          {state.smurfs.map(item => 
+            <Smurf smurf={item} key={item.id}/>  
+          )}
+        </>)}
 </div>
   )
 }
