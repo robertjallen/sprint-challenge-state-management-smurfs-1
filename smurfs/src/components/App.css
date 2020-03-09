@@ -1,3 +1,18 @@
 .App {
   text-align: center;
 }
+.card{
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  border: 1px solid cornflowerblue;
+}
+.card p{
+  margin: 0 15px;
+  padding: 5px; 
+}
+.list-container{
+  margin: 0 auto;
+  width: 800px;
+  max-width: 80%;
+}

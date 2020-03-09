@@ -26,11 +26,11 @@ export default function App(props) {
 
       { state.isLoading ? (<div className="spinner"/>) : (
 
-        <>
+        <div className="list-container">
           {state.smurfs.map(item => 
             <Smurf smurf={item} key={item.id}/>  
           )}
-        </>)}
+        </div>)}
 </div>
   )
 }
