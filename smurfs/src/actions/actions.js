@@ -28,3 +28,21 @@ export function fetchSmurfs() {
       });
     };
   }
+
+
+  // ADD NEW
+
+  export function addSmurf(smurf){
+    return dispatch => {
+    axios
+    .post(`http://localhost:3333/smurfs`, smurf)
+    .then(res => {
+        // Code for handling API response
+        console.log("addsmurfs", res)
+        dispatch({ type: FETCH_SMURF_SUCCESS, payload: res.data});
+    })
+    .catch(function() {
+        // Code for handling errors
+    });
+    }
+}
