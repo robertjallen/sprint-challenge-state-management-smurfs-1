@@ -6,6 +6,8 @@ export const FETCH_SMURF_ERROR = "FETCH_SMURF_ERROR";
 
 export const ADD_SMURF = "ADD_SMURF";
 
+
+
 export function fetchSmurfs() {
     // this is our "thunk" function. redux-thunk middleware
     // automatically gives us access to the dispatcher as a parameter

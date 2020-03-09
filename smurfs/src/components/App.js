@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import {fetchSmurfs} from '../actions/actions'
 import "./App.css";
 import Smurf from './Smurf'
+import Form from './Form'
 
 
 export default function App(props) {
@@ -27,9 +28,9 @@ export default function App(props) {
 
 
         {/* form  */}
+            <Form/>
 
 
-        
 
 </div>
   )
