@@ -24,9 +24,9 @@ function Form(props) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input name="name" onChange={handleChange} value={newSmurf.name}/>
-            <input name="age" onChange={handleChange} value={newSmurf.age}/>
-            <input name="height" onChange={handleChange} value={newSmurf.height}/>
+            <input name="name" placeholder="name" onChange={handleChange} value={newSmurf.name}/>
+            <input name="age" placeholder="age" onChange={handleChange} value={newSmurf.age}/>
+            <input name="height" placeholder="height" onChange={handleChange} value={newSmurf.height}/>
             <button type="submit">Submit</button>
         </form>
     )
